@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtVerifyCalculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Verify Calculation"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="text"
+            />
+
+        <EditText android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="textPassword"
+            />
+
+        <CheckBox
+            android:id="@+id/chkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculation made are correct"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Button android:id="@+id/btnCheckCalculation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Calculation"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+        <Button android:id="@+id/btnAddMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Medication"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+</LinearLayout>

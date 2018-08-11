@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtPediatricMedicationCalculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Medication Calculation"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <Spinner
+            android:id="@+id/spinnerNurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDrug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText android:id="@+id/editTextDrugMg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Drug Amount"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="numberDecimal"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/midDrugView" />
+        <View android:id="@+id/midDrugView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            />
+
+        <EditText android:id="@+id/editTextDrugMl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Drug Amount"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="numberDecimal"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/midDrugView"
+            />
+    </RelativeLayout>
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinnerMedicationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/medication_type_arrays"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/midDrug2View" />
+                <View android:id="@+id/midDrug2View"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <EditText android:id="@+id/editTextInterval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="(2 Hrs)"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="numberDecimal"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/midDrug2View"
+                    />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextStandingOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/midView"
+                    android:hint="Standing Order"
+                    android:inputType="numberDecimal" />
+
+                <View
+                    android:id="@+id/midView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_centerInParent="true" />
+
+                <EditText
+                    android:id="@+id/editTextPatientWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/midView"
+                    android:hint="Weight"
+                    android:inputType="numberDecimal" />
+        </RelativeLayout>
+
+        <EditText android:id="@+id/editTextDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(standing order * weight)"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="numberDecimal"
+            />
+
+
+
+
+
+        <EditText android:id="@+id/editTextTotalMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="(Dosage / Drug Ml)* Drug Ml"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="numberDecimal"
+            />
+
+        <Button android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.faryaz.anglesea">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.faryaz.anglesea.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.faryaz.anglesea.LoginActivity" />
+        <activity android:name="com.example.faryaz.anglesea.HomeActivity" />
+        <activity android:name="com.example.faryaz.anglesea.AdminDashboardActivity" />
+        <activity android:name="com.example.faryaz.anglesea.NurseDashboardActivity" />
+        <activity android:name="com.example.faryaz.anglesea.MenuDrugActivity" />
+        <activity android:name="com.example.faryaz.anglesea.MenuNurseActivity" />
+        <activity android:name="com.example.faryaz.anglesea.MenuPatientActivity" />
+        <activity android:name="com.example.faryaz.anglesea.MenuRoomActivity" />
+        <activity android:name="com.example.faryaz.anglesea.NewRoomActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ListRoomActivity" />
+        <activity android:name="com.example.faryaz.anglesea.NewDrugActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ListDrugActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ViewDrugDetailActivity" />
+        <activity android:name="com.example.faryaz.anglesea.UpdateDrugActivity" />
+        <activity android:name="com.example.faryaz.anglesea.NewStaffActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ListStaffActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ViewStaffDetailActivity" />
+        <activity android:name="com.example.faryaz.anglesea.UpdateStaffActivity" />
+        <activity android:name="com.example.faryaz.anglesea.NewPatientActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ListPatientActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ViewPatientDetailActivity" />
+        <activity android:name="com.example.faryaz.anglesea.CalculatePatientDosagePediatricsActivity" />
+        <activity android:name="com.example.faryaz.anglesea.CalculatePatientDosageAdultActivity" />
+        <activity android:name="com.example.faryaz.anglesea.UpdatePatientActivity" />
+        <activity android:name="com.example.faryaz.anglesea.VerifyDrugActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ListMedicationActivity" />
+        <activity android:name="com.example.faryaz.anglesea.ViewMedicationDetailActivity" />
+        <activity android:name="com.example.faryaz.anglesea.testsampleactivity"></activity>
+    </application>
+
+</manifest>

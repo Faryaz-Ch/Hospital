@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.faryaz.anglesea.UpdateDrugActivity">
+    <!--<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/anglesea_logo"
+            android:id="@+id/imgv_logo"/>
+    </android.support.design.widget.AppBarLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <TextView
+            android:id="@+id/textViewDrugTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Update Drug"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editTextDrugName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDrugTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Drug Name" />
+
+        <EditText
+            android:id="@+id/editTextDrugCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDrugName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Code" />
+
+        <EditText
+            android:id="@+id/editTextDrugMg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDrugCode"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Milligram" />
+
+        <EditText
+            android:id="@+id/editTextDrugMl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextDrugMg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Millitres" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextDrugMl"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_pediatrics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pediatrics"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_adult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/rb_pediatrics"
+                    android:layout_toEndOf="@id/rb_pediatrics"
+                    android:text="Adult"
+                    android:checked="false"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/chkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dangerous Drug"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/radioGroup1"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/btnUpdate"
+            android:layout_below="@id/chkBox"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
