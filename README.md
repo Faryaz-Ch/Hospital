@@ -1,5 +1,5 @@
-# Hospital
-The current workflow process for calculating drug dosages are as follows:
+# Hospital Mobile Application workflow process for calculating drug dosages are as follows:
+
 1. Drug dosage is required to be administered
 2. Nurse checks the following
 a. The patients chart and verification
