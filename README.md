@@ -35,3 +35,5 @@ d. Include all units of measurements
 7. The Total Medication is then given to the patient
 8. The medication is recorded on the Patients drug chart
 9. When medications are given it is time-stamped
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/__HtI0Cxbt8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
