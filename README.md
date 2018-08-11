@@ -36,5 +36,7 @@ d. Include all units of measurements
 8. The medication is recorded on the Patients drug chart
 9. When medications are given it is time-stamped
 
+#Click following thumbnail to Watch Preview of Android Mobile Application for Hospital
+
 [![Watch Preview of Android Mobile Application for Hospital](http://img.youtube.com/vi/__HtI0Cxbt8/0.jpg)](http://www.youtube.com/watch?v=__HtI0Cxbt8 "Preview of Android Mobile Application for Hospital")
 
